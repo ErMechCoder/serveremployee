@@ -1,7 +1,7 @@
 
 import Client from "../models/Client.js";
 export  const postClientProfile = async (req, res) => {
-    const  user = await req.data
+      const  user = await req.body
    
     const profile = await new Client(user)
     try {
