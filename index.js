@@ -59,7 +59,7 @@ const PORT = process.env.PORT || 9000;
 // mongoose.set('strictQuery', true
 // )
 mongoose
-  .connect(process.env.MONGO_URL, {
+  .connect("mongodb+srv://atul:ermechcoder@cluster0.fq4j3um.mongodb.net/magnet?retryWrites=true&w=majority", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
